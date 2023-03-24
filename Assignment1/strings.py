@@ -28,7 +28,7 @@ print('Markup: $'+str(markup))
 print('percentage markup: %'+str(round(percentageMarkup,2)))
 print('profit margin: %'+str(round(profitMargin,2)))
 # Q.109
-number = input('Enter the number: ')
+number = input('Enter the number: ').strip()
 n = number.find('.')
 numOfLeft = len(number[:n])
 numOfRight = len(number[n+1:])

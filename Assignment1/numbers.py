@@ -25,7 +25,7 @@ milesPerGallon = differentBetween/numsOfGallons
 print(str(milesPerGallon)+' mile/gallon')
 # Q.73
 numsOfWattsPerMonth = 750000000
-population = 50000000
+population = 5000000
 numsOfWattsDaily = int(numsOfWattsPerMonth/30)/population
 print("{:,}".format(numsOfWattsDaily)+' watts/day')
 # Q.74
