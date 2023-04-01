@@ -68,32 +68,32 @@ for card in deckOfCards:
 # Display presidents with a specified first name
 firstName = input('Enter a first name: ')
 flag = False
-infile = open('Files\\forLoop.txt', 'r')
-for line in infile:
+inFile = open('Files\\forLoop.txt', 'r')
+for line in inFile:
     if line.startswith(firstName+''):
         print(line.rstrip())
         flag = True
-infile.close()
+inFile.close()
 if not flag:
     print('President not found!')        
 
 # Display last line in a file
-infile = open('Files\\forLoop.txt','r')
-for line in infile:
+inFile = open('Files\\forLoop.txt','r')
+for line in inFile:
     pass
 print(line.strip())
-infile.close()
+inFile.close()
 
 # Add content of file in a list
 dataList  = []
-infile = open('Files\\forLoop.txt','r')
-for line in infile:
+inFile = open('Files\\forLoop.txt','r')
+for line in inFile:
     dataList.append(line.strip())
-infile.close()    
+inFile.close()    
 print(dataList)
 
 # Add content of file in a list
-infile = open('Files\\forLoop.txt','r')
-dataList = [line.rstrip() for line in infile]
-infile.close()
+inFile = open('Files\\forLoop.txt','r')
+dataList = [line.rstrip() for line in inFile]
+inFile.close()
 print(dataList)

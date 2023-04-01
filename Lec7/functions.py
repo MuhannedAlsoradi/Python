@@ -1,10 +1,10 @@
 # Functions
 def main():
     print(isVowelWord('Ahmed'))
-    print(occuringVowels('important'))
+    print(occurringVowels('important'))
 
 
-def fahrenheitTocelsius(t):
+def fahrenheitToCelsius(t):
     convertedTemp = (5/9)*(t-32)
     return convertedTemp
 
@@ -45,14 +45,14 @@ def isVowelWord(word):
             return False
 
 
-def occuringVowels(word):
+def occurringVowels(word):
     word = word.upper()
-    occuredVowels = []
+    occurredVowels = []
     vowels = ('A', 'E', 'I', 'O', 'U')
     for vowel in vowels:
-        if (vowel in word) and (vowel not in occuredVowels):
-            occuredVowels.append(vowel)
-    return occuredVowels
+        if (vowel in word) and (vowel not in occurredVowels):
+            occurredVowels.append(vowel)
+    return occurredVowels
 
 
 print(int(3.5))
@@ -61,8 +61,8 @@ print(eval('3.5'))
 print(chr(65))
 print(ord('A'))
 print(round(2.34, 1))
-print('Your first name:', firstName('Muhanned alsoradi'))
-print('Celsius equivalent: ', fahrenheitTocelsius(212), 'degrees')
+print('Your first name:', firstName('Muhanned Alsoradi'))
+print('Celsius equivalent: ', fahrenheitToCelsius(212), 'degrees')
 num = 3
 print(triple(num))
 print(num)

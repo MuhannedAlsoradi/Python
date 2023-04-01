@@ -18,7 +18,7 @@ print('Ahmed' not in 'Omar')
 print(['Ok', '7', 'Hi'] < ['7', 'two', 'hello!'])
 print(1 <= 1)
 print(1 < 1)
-print('cat' < 'car')
+print('cat' < 'car','test')
 print('Dog' < 'dog')
 print('fun' in 'refund')
 a = 4
