@@ -72,12 +72,14 @@ class A:
 class der(A):
     def __init__(self, y=2):
         super().__init__()
-        self.y = y
+        self.__y = y
 
 
 def main():
     obj = der()
-    print(obj.x, obj.y)
+    obj.__y = 3
+    obj.__y = 5
+    print(obj.x, obj.__y)
 
 
 main()
