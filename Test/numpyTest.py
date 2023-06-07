@@ -138,3 +138,4 @@ print(a)
 print(np.isfinite(a))
 print(np.isnan(a))
 print(a[a>0])
+

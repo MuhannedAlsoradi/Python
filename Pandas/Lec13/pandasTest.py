@@ -40,9 +40,12 @@ df_new.sort_values('new_title', ascending=False,
                    ignore_index=True, inplace=True)
 print(df_new.head())
 df1 = df.iloc[0:3, 2:]
+# df1 = df.at[0:3,2:]
+# df1 = df.iat[0:3,2:]
+# df1 = df.loc[0:3,2:]
 print(df1.head())
 df2 = df.iloc[10:13, 2:]
 print(df2.head())
 df3 = ps.concat([df1, df2], axis=0)
 print(df3.head())
-df.to_csv('Files\\new_csv.csv',index=False)
+df.to_csv('Files\\new_csv.csv', index=False)

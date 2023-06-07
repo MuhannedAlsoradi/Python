@@ -1,9 +1,9 @@
 try:
     num = int(input('Enter a number: '))
     print(num)
-except ValueError:
-    print('Invalid value!')
 except ValueError as ex:
+    print('Invalid value!')
+except ValueError:
     print('Invalid value!')
 except:
     print('Invalid value!')
